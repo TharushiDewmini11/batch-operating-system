@@ -2,524 +2,1738 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Batch Operating Systems | Group 37</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <link rel="stylesheet" href="style.css">
+    <meta
+        name="description"
+        content="Batch Operating Systems - CCS2303 Group 37 Presentation"
+    >
+
+    <title>
+        Batch Operating Systems | Group 37
+    </title>
+
+    <!-- Google Fonts -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Main CSS -->
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
 </head>
+
 
 <body>
 
-    <div class="presentation">
+    <!-- Background Grid -->
+    <div class="background-grid"></div>
 
-        <!-- Slide 1 -->
-        <section class="slide active">
-            <div class="content title-slide">
-                <div class="group">GROUP 37</div>
 
-                <h1>Batch Operating Systems</h1>
+    <!-- Main Presentation -->
 
-                <p class="subtitle">
-                    CCS2303 – Operating Systems & Platforms
+    <main id="presentation">
+
+
+        <!-- =========================
+             SLIDE 1
+        ========================== -->
+
+        <section
+            class="slide active"
+            data-slide="1"
+        >
+
+            <header class="slide-header">
+
+                <div class="brand">
+                    BATCHFLOW
+                </div>
+
+                <div class="system-status">
+                    <span class="status-dot"></span>
+                    SYSTEM READY
+                </div>
+
+            </header>
+
+
+            <div class="hero-content">
+
+                <div class="eyebrow">
+                    CCS2303 · OPERATING SYSTEMS & PLATFORMS
+                </div>
+
+                <h1>
+                    BATCH
+                    <span>OPERATING</span>
+                    SYSTEMS
+                </h1>
+
+                <p class="hero-description">
+                    Understanding automated job processing,
+                    scheduling, and large-scale workload execution.
                 </p>
 
-                <div class="members">
-                    <p>Member 1 – K.K.S.Madushani / Registration No: Cit-25-01-0675</p>
-                    <p>Member 2 – T.D.Pothupitiiya / Registration No: Cit-25-01-0828</p>
-                    <p>Member 3 – E.W.S.K.De Seram / Registration No: Cit-25-01-0769</p>
-                    <p>Member 4 – K.H.Kaveesha / Registration No: Cit-25-01-0755</p>
-                    <p>Member 5 – Rathnakumar Nilushika / Registration No: Cit-25-01-0268</p>
-                </div>
 
-                <p class="hint">
-                    Use ← → keys or the buttons below
-                </p>
-            </div>
-        </section>
+                <div class="team-panel">
 
-
-        <!-- Slide 2 -->
-        <section class="slide">
-            <div class="content">
-                <span class="slide-number">01</span>
-
-                <h2>What is a Batch Operating System?</h2>
-
-                <ul>
-                    <li>A Batch Operating System executes a group of jobs together.</li>
-                    <li>Jobs are collected and processed without direct user interaction.</li>
-                    <li>Similar jobs are grouped into a batch.</li>
-                    <li>Jobs are executed one after another according to a planned order.</li>
-                    <li>Users normally do not interact with the system while a job is running.</li>
-                </ul>
-
-                <div class="highlight">
-                    <strong>Key idea:</strong>
-                    Submit jobs → Wait → System processes them automatically → Receive results
-                </div>
-            </div>
-        </section>
-
-
-        <!-- Slide 3 -->
-        <section class="slide">
-            <div class="content">
-                <span class="slide-number">02</span>
-
-                <h2>How Does a Batch Operating System Work?</h2>
-
-                <div class="process">
-
-                    <div class="process-box">
-                        <strong>1</strong>
-                        <span>User submits jobs</span>
+                    <div class="team-header">
+                        GROUP 37
                     </div>
 
-                    <div class="arrow">→</div>
 
-                    <div class="process-box">
-                        <strong>2</strong>
-                        <span>Jobs are collected</span>
-                    </div>
+                    <div class="team-grid">
 
-                    <div class="arrow">→</div>
+                        <div class="member">
+                            <span>01</span>
+                            <p>
+                                MEMBER 1<br>
+                                <small>Introduction & Concepts</small>
+                            </p>
+                        </div>
 
-                    <div class="process-box">
-                        <strong>3</strong>
-                        <span>Jobs are grouped</span>
-                    </div>
+                        <div class="member">
+                            <span>02</span>
+                            <p>
+                                MEMBER 2<br>
+                                <small>System Flow</small>
+                            </p>
+                        </div>
 
-                    <div class="arrow">→</div>
+                        <div class="member">
+                            <span>03</span>
+                            <p>
+                                MEMBER 3<br>
+                                <small>Components & Scheduling</small>
+                            </p>
+                        </div>
 
-                    <div class="process-box">
-                        <strong>4</strong>
-                        <span>Jobs enter queue</span>
-                    </div>
+                        <div class="member">
+                            <span>04</span>
+                            <p>
+                                MEMBER 4<br>
+                                <small>Benefits & Limitations</small>
+                            </p>
+                        </div>
 
-                    <div class="arrow">→</div>
+                        <div class="member">
+                            <span>05</span>
+                            <p>
+                                MEMBER 5<br>
+                                <small>Evolution & Conclusion</small>
+                            </p>
+                        </div>
 
-                    <div class="process-box">
-                        <strong>5</strong>
-                        <span>Scheduler selects jobs</span>
-                    </div>
-
-                    <div class="arrow">→</div>
-
-                    <div class="process-box">
-                        <strong>6</strong>
-                        <span>Results produced</span>
                     </div>
 
                 </div>
+
             </div>
+
+
+            <footer class="slide-footer">
+
+                <span>
+                    GROUP 37
+                </span>
+
+                <span>
+                    PRESENTATION SYSTEM v1.0
+                </span>
+
+                <span>
+                    01 / 12
+                </span>
+
+            </footer>
+
         </section>
 
 
-        <!-- Slide 4 -->
-        <section class="slide">
-            <div class="content">
-                <span class="slide-number">03</span>
 
-                <h2>Main Characteristics</h2>
+        <!-- =========================
+             SLIDE 2
+        ========================== -->
 
-                <div class="cards">
+        <section
+            class="slide"
+            data-slide="2"
+        >
 
-                    <div class="card">
-                        <div class="icon">01</div>
-                        <h3>No Direct Interaction</h3>
-                        <p>Users do not continuously interact with running jobs.</p>
+            <header class="slide-header">
+
+                <div class="brand">
+                    BATCHFLOW
+                </div>
+
+                <div class="system-status">
+                    <span class="status-dot"></span>
+                    CONCEPT LOADED
+                </div>
+
+            </header>
+
+
+            <div class="content-layout">
+
+                <div class="section-label">
+                    01 / CORE CONCEPT
+                </div>
+
+                <h2>
+                    WHAT IS A BATCH
+                    <span>OPERATING SYSTEM?</span>
+                </h2>
+
+
+                <div class="definition-grid">
+
+                    <div class="definition-box">
+
+                        <span class="box-label">
+                            PRIMARY DEFINITION
+                        </span>
+
+                        <p>
+                            A Batch Operating System collects
+                            multiple jobs, organizes them into
+                            batches, and executes them automatically
+                            with minimal user interaction.
+                        </p>
+
                     </div>
 
-                    <div class="card">
-                        <div class="icon">02</div>
-                        <h3>Automatic Processing</h3>
-                        <p>Jobs are processed automatically by the system.</p>
-                    </div>
 
-                    <div class="card">
-                        <div class="icon">03</div>
-                        <h3>Job Scheduling</h3>
-                        <p>The system determines which job runs next.</p>
-                    </div>
+                    <div class="flow-mini">
 
-                    <div class="card">
-                        <div class="icon">04</div>
-                        <h3>Job Queue</h3>
-                        <p>Jobs wait in a queue until resources are available.</p>
-                    </div>
+                        <div class="mini-node">
+                            USER JOBS
+                        </div>
 
-                    <div class="card">
-                        <div class="icon">05</div>
-                        <h3>Large Workloads</h3>
-                        <p>Ideal for repetitive and large-scale tasks.</p>
-                    </div>
+                        <div class="mini-arrow">
+                            ↓
+                        </div>
 
-                    <div class="card">
-                        <div class="icon">06</div>
-                        <h3>Less Manual Work</h3>
-                        <p>Reduces the need for continuous human intervention.</p>
+                        <div class="mini-node active-node">
+                            BATCH QUEUE
+                        </div>
+
+                        <div class="mini-arrow">
+                            ↓
+                        </div>
+
+                        <div class="mini-node">
+                            EXECUTION
+                        </div>
+
+                        <div class="mini-arrow">
+                            ↓
+                        </div>
+
+                        <div class="mini-node">
+                            OUTPUT
+                        </div>
+
                     </div>
 
                 </div>
-            </div>
-        </section>
 
 
-        <!-- Slide 5 -->
-        <section class="slide">
-            <div class="content">
-                <span class="slide-number">04</span>
-
-                <h2>Components of Batch Processing</h2>
-
-                <div class="component-list">
+                <div class="key-points">
 
                     <div>
                         <span>01</span>
-                        <section>
-                            <h3>Jobs</h3>
-                            <p>Programs or tasks submitted by users.</p>
-                        </section>
+                        Groups similar jobs together.
                     </div>
 
                     <div>
                         <span>02</span>
-                        <section>
-                            <h3>Job Queue</h3>
-                            <p>Stores jobs waiting for execution.</p>
-                        </section>
+                        Reduces continuous user interaction.
                     </div>
 
                     <div>
                         <span>03</span>
-                        <section>
-                            <h3>Job Scheduler</h3>
-                            <p>Decides which job should run next.</p>
-                        </section>
+                        Processes jobs automatically.
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <footer class="slide-footer">
+
+                <span>CORE CONCEPT</span>
+                <span>GROUP 37</span>
+                <span>02 / 12</span>
+
+            </footer>
+
+        </section>
+
+
+
+        <!-- =========================
+             SLIDE 3
+        ========================== -->
+
+        <section
+            class="slide"
+            data-slide="3"
+        >
+
+            <header class="slide-header">
+
+                <div class="brand">
+                    BATCHFLOW
+                </div>
+
+                <div class="system-status">
+                    <span class="status-dot"></span>
+                    FLOW ACTIVE
+                </div>
+
+            </header>
+
+
+            <div class="content-layout">
+
+                <div class="section-label">
+                    02 / PROCESS FLOW
+                </div>
+
+                <h2>
+                    HOW JOBS MOVE
+                    <span>THROUGH THE SYSTEM</span>
+                </h2>
+
+
+                <div class="pipeline">
+
+                    <div class="pipeline-item">
+
+                        <span class="pipeline-number">
+                            01
+                        </span>
+
+                        <strong>
+                            SUBMIT
+                        </strong>
+
+                        <p>
+                            Users submit
+                            jobs.
+                        </p>
+
+                    </div>
+
+
+                    <div class="pipeline-line"></div>
+
+
+                    <div class="pipeline-item">
+
+                        <span class="pipeline-number">
+                            02
+                        </span>
+
+                        <strong>
+                            COLLECT
+                        </strong>
+
+                        <p>
+                            Jobs are
+                            collected.
+                        </p>
+
+                    </div>
+
+
+                    <div class="pipeline-line"></div>
+
+
+                    <div class="pipeline-item">
+
+                        <span class="pipeline-number">
+                            03
+                        </span>
+
+                        <strong>
+                            QUEUE
+                        </strong>
+
+                        <p>
+                            Jobs wait
+                            for execution.
+                        </p>
+
+                    </div>
+
+
+                    <div class="pipeline-line"></div>
+
+
+                    <div class="pipeline-item active-pipeline">
+
+                        <span class="pipeline-number">
+                            04
+                        </span>
+
+                        <strong>
+                            PROCESS
+                        </strong>
+
+                        <p>
+                            CPU executes
+                            the batch.
+                        </p>
+
+                    </div>
+
+
+                    <div class="pipeline-line"></div>
+
+
+                    <div class="pipeline-item">
+
+                        <span class="pipeline-number">
+                            05
+                        </span>
+
+                        <strong>
+                            OUTPUT
+                        </strong>
+
+                        <p>
+                            Results are
+                            generated.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <footer class="slide-footer">
+
+                <span>PROCESS FLOW</span>
+                <span>INPUT → PROCESS → OUTPUT</span>
+                <span>03 / 12</span>
+
+            </footer>
+
+        </section>
+
+
+
+        <!-- =========================
+             SLIDE 4
+        ========================== -->
+
+        <section
+            class="slide"
+            data-slide="4"
+        >
+
+            <header class="slide-header">
+
+                <div class="brand">
+                    BATCHFLOW
+                </div>
+
+                <div class="system-status">
+                    <span class="status-dot"></span>
+                    ARCHITECTURE ONLINE
+                </div>
+
+            </header>
+
+
+            <div class="content-layout">
+
+                <div class="section-label">
+                    03 / SYSTEM ARCHITECTURE
+                </div>
+
+                <h2>
+                    CORE COMPONENTS
+                    <span>OF BATCH PROCESSING</span>
+                </h2>
+
+
+                <div class="component-grid">
+
+                    <div class="component-card">
+
+                        <span>01</span>
+
+                        <h3>
+                            JOB POOL
+                        </h3>
+
+                        <p>
+                            Stores submitted programs
+                            waiting for processing.
+                        </p>
+
+                    </div>
+
+
+                    <div class="component-card">
+
+                        <span>02</span>
+
+                        <h3>
+                            JOB QUEUE
+                        </h3>
+
+                        <p>
+                            Organizes jobs according
+                            to execution order.
+                        </p>
+
+                    </div>
+
+
+                    <div class="component-card">
+
+                        <span>03</span>
+
+                        <h3>
+                            SCHEDULER
+                        </h3>
+
+                        <p>
+                            Selects which job
+                            should execute next.
+                        </p>
+
+                    </div>
+
+
+                    <div class="component-card">
+
+                        <span>04</span>
+
+                        <h3>
+                            MEMORY
+                        </h3>
+
+                        <p>
+                            Holds active programs
+                            and required data.
+                        </p>
+
+                    </div>
+
+
+                    <div class="component-card">
+
+                        <span>05</span>
+
+                        <h3>
+                            CPU
+                        </h3>
+
+                        <p>
+                            Executes instructions
+                            for selected jobs.
+                        </p>
+
+                    </div>
+
+
+                    <div class="component-card">
+
+                        <span>06</span>
+
+                        <h3>
+                            I/O SYSTEM
+                        </h3>
+
+                        <p>
+                            Manages data input
+                            and output operations.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <footer class="slide-footer">
+
+                <span>SYSTEM ARCHITECTURE</span>
+                <span>6 CORE COMPONENTS</span>
+                <span>04 / 12</span>
+
+            </footer>
+
+        </section>
+
+
+
+        <!-- =========================
+             SLIDE 5
+        ========================== -->
+
+        <section
+            class="slide"
+            data-slide="5"
+        >
+
+            <header class="slide-header">
+
+                <div class="brand">
+                    BATCHFLOW
+                </div>
+
+                <div class="system-status">
+                    <span class="status-dot"></span>
+                    JOB MONITOR ACTIVE
+                </div>
+
+            </header>
+
+
+            <div class="content-layout">
+
+                <div class="section-label">
+                    04 / JOB LIFECYCLE
+                </div>
+
+                <h2>
+                    FROM SUBMISSION
+                    <span>TO COMPLETION</span>
+                </h2>
+
+
+                <div class="lifecycle-grid">
+
+                    <div class="lifecycle-card">
+
+                        <div class="life-number">
+                            01
+                        </div>
+
+                        <h3>
+                            PREPARE
+                        </h3>
+
+                        <p>
+                            The program and
+                            required data are prepared.
+                        </p>
+
+                    </div>
+
+
+                    <div class="lifecycle-card">
+
+                        <div class="life-number">
+                            02
+                        </div>
+
+                        <h3>
+                            SUBMIT
+                        </h3>
+
+                        <p>
+                            The job enters
+                            the batch system.
+                        </p>
+
+                    </div>
+
+
+                    <div class="lifecycle-card active-life">
+
+                        <div class="life-number">
+                            03
+                        </div>
+
+                        <h3>
+                            EXECUTE
+                        </h3>
+
+                        <p>
+                            The scheduler sends
+                            the job to the CPU.
+                        </p>
+
+                    </div>
+
+
+                    <div class="lifecycle-card">
+
+                        <div class="life-number">
+                            04
+                        </div>
+
+                        <h3>
+                            COMPLETE
+                        </h3>
+
+                        <p>
+                            Results are stored
+                            or delivered as output.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="job-status">
+
+                    <div class="job-row">
+
+                        <span>JOB-001</span>
+
+                        <div class="progress">
+                            <div
+                                class="progress-fill fill-100"
+                            ></div>
+                        </div>
+
+                        <strong>
+                            COMPLETE
+                        </strong>
+
+                    </div>
+
+
+                    <div class="job-row">
+
+                        <span>JOB-002</span>
+
+                        <div class="progress">
+                            <div
+                                class="progress-fill fill-70"
+                            ></div>
+                        </div>
+
+                        <strong>
+                            PROCESSING
+                        </strong>
+
+                    </div>
+
+
+                    <div class="job-row">
+
+                        <span>JOB-003</span>
+
+                        <div class="progress">
+                            <div
+                                class="progress-fill fill-20"
+                            ></div>
+                        </div>
+
+                        <strong>
+                            WAITING
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <footer class="slide-footer">
+
+                <span>JOB LIFECYCLE</span>
+                <span>QUEUE STATUS MONITOR</span>
+                <span>05 / 12</span>
+
+            </footer>
+
+        </section>
+
+
+
+        <!-- =========================
+             SLIDE 6
+        ========================== -->
+
+        <section
+            class="slide"
+            data-slide="6"
+        >
+
+            <header class="slide-header">
+
+                <div class="brand">
+                    BATCHFLOW
+                </div>
+
+                <div class="system-status">
+                    <span class="status-dot"></span>
+                    SCHEDULER RUNNING
+                </div>
+
+            </header>
+
+
+            <div class="content-layout">
+
+                <div class="section-label">
+                    05 / JOB SCHEDULING
+                </div>
+
+                <h2>
+                    WHO DECIDES
+                    <span>WHAT RUNS NEXT?</span>
+                </h2>
+
+
+                <div class="scheduler-layout">
+
+
+                    <div class="queue-list">
+
+                        <div>
+                            JOB A
+                            <span>WAITING</span>
+                        </div>
+
+                        <div>
+                            JOB B
+                            <span>WAITING</span>
+                        </div>
+
+                        <div>
+                            JOB C
+                            <span>WAITING</span>
+                        </div>
+
+                        <div>
+                            JOB D
+                            <span>WAITING</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="scheduler-center">
+
+                        <div class="scheduler-core">
+
+                            <div class="pulse"></div>
+
+                            <strong>
+                                JOB
+                                SCHEDULER
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="execution-box">
+
+                        <span>
+                            CPU
+                        </span>
+
+                        <strong>
+                            EXECUTION
+                        </strong>
+
+                        <p>
+                            Selected job
+                            is processed.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="scheduler-points">
+
+                    <p>
+                        <span>01</span>
+                        Jobs wait in the job queue.
+                    </p>
+
+                    <p>
+                        <span>02</span>
+                        The scheduler selects the next job.
+                    </p>
+
+                    <p>
+                        <span>03</span>
+                        The CPU executes the selected job.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <footer class="slide-footer">
+
+                <span>JOB SCHEDULING</span>
+                <span>QUEUE → SCHEDULER → CPU</span>
+                <span>06 / 12</span>
+
+            </footer>
+
+        </section>
+
+
+
+        <!-- =========================
+             SLIDE 7
+        ========================== -->
+
+        <section
+            class="slide"
+            data-slide="7"
+        >
+
+            <header class="slide-header">
+
+                <div class="brand">
+                    BATCHFLOW
+                </div>
+
+                <div class="system-status">
+                    <span class="status-dot"></span>
+                    APPLICATION DATA READY
+                </div>
+
+            </header>
+
+
+            <div class="content-layout">
+
+                <div class="section-label">
+                    06 / APPLICATIONS
+                </div>
+
+                <h2>
+                    WHERE IS BATCH
+                    <span>PROCESSING USED?</span>
+                </h2>
+
+
+                <div class="application-table">
+
+                    <div class="table-header">
+
+                        <span>SYSTEM</span>
+
+                        <span>BATCH WORKLOAD</span>
+
+                    </div>
+
+
+                    <div class="table-row">
+
+                        <strong>
+                            BANKING
+                        </strong>
+
+                        <span>
+                            Transaction processing
+                        </span>
+
+                    </div>
+
+
+                    <div class="table-row">
+
+                        <strong>
+                            PAYROLL
+                        </strong>
+
+                        <span>
+                            Salary calculation
+                        </span>
+
+                    </div>
+
+
+                    <div class="table-row">
+
+                        <strong>
+                            UTILITIES
+                        </strong>
+
+                        <span>
+                            Bill generation
+                        </span>
+
+                    </div>
+
+
+                    <div class="table-row">
+
+                        <strong>
+                            UNIVERSITIES
+                        </strong>
+
+                        <span>
+                            Examination result processing
+                        </span>
+
+                    </div>
+
+
+                    <div class="table-row">
+
+                        <strong>
+                            DATA CENTERS
+                        </strong>
+
+                        <span>
+                            Automated backup operations
+                        </span>
+
+                    </div>
+
+
+                    <div class="table-row">
+
+                        <strong>
+                            BUSINESS
+                        </strong>
+
+                        <span>
+                            Report generation
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <footer class="slide-footer">
+
+                <span>APPLICATIONS</span>
+                <span>REAL-WORLD BATCH WORKLOADS</span>
+                <span>07 / 12</span>
+
+            </footer>
+
+        </section>
+
+
+
+        <!-- =========================
+             SLIDE 8
+        ========================== -->
+
+        <section
+            class="slide"
+            data-slide="8"
+        >
+
+            <header class="slide-header">
+
+                <div class="brand">
+                    BATCHFLOW
+                </div>
+
+                <div class="system-status">
+                    <span class="status-dot"></span>
+                    PERFORMANCE ANALYSIS
+                </div>
+
+            </header>
+
+
+            <div class="content-layout">
+
+                <div class="section-label">
+                    07 / ADVANTAGES
+                </div>
+
+                <h2>
+                    WHY USE A
+                    <span>BATCH SYSTEM?</span>
+                </h2>
+
+
+                <div class="benefit-grid">
+
+                    <div class="benefit-card">
+
+                        <span>+</span>
+
+                        <h3>
+                            HIGH THROUGHPUT
+                        </h3>
+
+                        <p>
+                            Processes large numbers
+                            of jobs efficiently.
+                        </p>
+
+                    </div>
+
+
+                    <div class="benefit-card">
+
+                        <span>+</span>
+
+                        <h3>
+                            AUTOMATION
+                        </h3>
+
+                        <p>
+                            Requires less continuous
+                            human intervention.
+                        </p>
+
+                    </div>
+
+
+                    <div class="benefit-card">
+
+                        <span>+</span>
+
+                        <h3>
+                            RESOURCE USE
+                        </h3>
+
+                        <p>
+                            Helps organize workloads
+                            efficiently.
+                        </p>
+
+                    </div>
+
+
+                    <div class="benefit-card">
+
+                        <span>+</span>
+
+                        <h3>
+                            REPEATABILITY
+                        </h3>
+
+                        <p>
+                            Ideal for predictable
+                            and repetitive jobs.
+                        </p>
+
+                    </div>
+
+
+                    <div class="benefit-card">
+
+                        <span>+</span>
+
+                        <h3>
+                            SCHEDULING
+                        </h3>
+
+                        <p>
+                            Tasks can be planned
+                            and executed automatically.
+                        </p>
+
+                    </div>
+
+
+                    <div class="benefit-card">
+
+                        <span>+</span>
+
+                        <h3>
+                            SCALABILITY
+                        </h3>
+
+                        <p>
+                            Useful for large
+                            workload environments.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <footer class="slide-footer">
+
+                <span>ADVANTAGES</span>
+                <span>SYSTEM BENEFITS</span>
+                <span>08 / 12</span>
+
+            </footer>
+
+        </section>
+
+
+
+        <!-- =========================
+             SLIDE 9
+        ========================== -->
+
+        <section
+            class="slide"
+            data-slide="9"
+        >
+
+            <header class="slide-header">
+
+                <div class="brand">
+                    BATCHFLOW
+                </div>
+
+                <div class="system-status warning-status">
+                    <span class="status-dot"></span>
+                    LIMITATION REPORT
+                </div>
+
+            </header>
+
+
+            <div class="content-layout">
+
+                <div class="section-label warning-label">
+                    08 / LIMITATIONS
+                </div>
+
+                <h2>
+                    WHERE DOES BATCH
+                    <span>PROCESSING STRUGGLE?</span>
+                </h2>
+
+
+                <div class="limitation-grid">
+
+                    <div class="limitation-card">
+
+                        <span>!</span>
+
+                        <h3>
+                            RESPONSE DELAY
+                        </h3>
+
+                        <p>
+                            Results are not
+                            immediately available.
+                        </p>
+
+                    </div>
+
+
+                    <div class="limitation-card">
+
+                        <span>!</span>
+
+                        <h3>
+                            LIMITED INTERACTION
+                        </h3>
+
+                        <p>
+                            Running jobs are difficult
+                            to modify directly.
+                        </p>
+
+                    </div>
+
+
+                    <div class="limitation-card">
+
+                        <span>!</span>
+
+                        <h3>
+                            ERROR DISCOVERY
+                        </h3>
+
+                        <p>
+                            Problems may be found
+                            after execution finishes.
+                        </p>
+
+                    </div>
+
+
+                    <div class="limitation-card">
+
+                        <span>!</span>
+
+                        <h3>
+                            WAITING TIME
+                        </h3>
+
+                        <p>
+                            Jobs may remain
+                            in the queue.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <footer class="slide-footer">
+
+                <span>LIMITATIONS</span>
+                <span>DIAGNOSTIC REPORT</span>
+                <span>09 / 12</span>
+
+            </footer>
+
+        </section>
+
+
+
+        <!-- =========================
+             SLIDE 10
+        ========================== -->
+
+        <section
+            class="slide"
+            data-slide="10"
+        >
+
+            <header class="slide-header">
+
+                <div class="brand">
+                    BATCHFLOW
+                </div>
+
+                <div class="system-status">
+                    <span class="status-dot"></span>
+                    HISTORY LOADED
+                </div>
+
+            </header>
+
+
+            <div class="content-layout">
+
+                <div class="section-label">
+                    09 / SYSTEM EVOLUTION
+                </div>
+
+                <h2>
+                    FROM MANUAL WORK
+                    <span>TO AUTOMATION</span>
+                </h2>
+
+
+                <div class="timeline">
+
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-year">
+                            1940s–1950s
+                        </div>
+
+                        <h3>
+                            NO-OS ERA
+                        </h3>
+
+                        <p>
+                            Humans manually controlled
+                            computer operations.
+                        </p>
+
+                    </div>
+
+
+                    <div class="timeline-item highlight-timeline">
+
+                        <div class="timeline-year">
+                            1950s
+                        </div>
+
+                        <h3>
+                            BATCH SYSTEMS
+                        </h3>
+
+                        <p>
+                            Jobs were grouped and
+                            processed automatically.
+                        </p>
+
+                    </div>
+
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-year">
+                            1960s
+                        </div>
+
+                        <h3>
+                            MULTIPROGRAMMING
+                        </h3>
+
+                        <p>
+                            Multiple jobs began sharing
+                            system resources.
+                        </p>
+
+                    </div>
+
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-year">
+                            TODAY
+                        </div>
+
+                        <h3>
+                            MODERN SYSTEMS
+                        </h3>
+
+                        <p>
+                            Batch processing continues
+                            in automated workloads.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <footer class="slide-footer">
+
+                <span>SYSTEM EVOLUTION</span>
+                <span>MANUAL → BATCH → MODERN OS</span>
+                <span>10 / 12</span>
+
+            </footer>
+
+        </section>
+
+
+
+        <!-- =========================
+             SLIDE 11
+        ========================== -->
+
+        <section
+            class="slide"
+            data-slide="11"
+        >
+
+            <header class="slide-header">
+
+                <div class="brand">
+                    BATCHFLOW
+                </div>
+
+                <div class="system-status">
+                    <span class="status-dot"></span>
+                    COMPARISON MODE
+                </div>
+
+            </header>
+
+
+            <div class="content-layout">
+
+                <div class="section-label">
+                    10 / SYSTEM COMPARISON
+                </div>
+
+                <h2>
+                    BATCH VS
+                    <span>INTERACTIVE SYSTEMS</span>
+                </h2>
+
+
+                <div class="comparison-table">
+
+                    <div class="comparison-header">
+
+                        <span>
+                            FEATURE
+                        </span>
+
+                        <span>
+                            BATCH OS
+                        </span>
+
+                        <span>
+                            INTERACTIVE OS
+                        </span>
+
+                    </div>
+
+
+                    <div class="comparison-row">
+
+                        <span>
+                            User Interaction
+                        </span>
+
+                        <strong>
+                            LOW
+                        </strong>
+
+                        <strong>
+                            HIGH
+                        </strong>
+
+                    </div>
+
+
+                    <div class="comparison-row">
+
+                        <span>
+                            Processing
+                        </span>
+
+                        <strong>
+                            JOB GROUPS
+                        </strong>
+
+                        <strong>
+                            INDIVIDUAL TASKS
+                        </strong>
+
+                    </div>
+
+
+                    <div class="comparison-row">
+
+                        <span>
+                            Response
+                        </span>
+
+                        <strong>
+                            DELAYED
+                        </strong>
+
+                        <strong>
+                            IMMEDIATE
+                        </strong>
+
+                    </div>
+
+
+                    <div class="comparison-row">
+
+                        <span>
+                            Best Use
+                        </span>
+
+                        <strong>
+                            REPETITIVE WORK
+                        </strong>
+
+                        <strong>
+                            USER TASKS
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <footer class="slide-footer">
+
+                <span>COMPARISON</span>
+                <span>BATCH OS vs INTERACTIVE OS</span>
+                <span>11 / 12</span>
+
+            </footer>
+
+        </section>
+
+
+
+        <!-- =========================
+             SLIDE 12
+        ========================== -->
+
+        <section
+            class="slide"
+            data-slide="12"
+        >
+
+            <header class="slide-header">
+
+                <div class="brand">
+                    BATCHFLOW
+                </div>
+
+                <div class="system-status">
+                    <span class="status-dot"></span>
+                    PRESENTATION COMPLETE
+                </div>
+
+            </header>
+
+
+            <div class="thank-content">
+
+                <div class="section-label">
+                    11 / CONCLUSION
+                </div>
+
+                <h2>
+                    BATCH PROCESSING
+                    <span>MADE AUTOMATION POSSIBLE.</span>
+                </h2>
+
+
+                <p class="conclusion-text">
+
+                    Batch Operating Systems introduced
+                    automated job execution and reduced
+                    the need for continuous manual control.
+
+                </p>
+
+
+                <div class="summary-panel">
+
+                    <div>
+                        <span>01</span>
+                        Jobs are collected and organized.
+                    </div>
+
+                    <div>
+                        <span>02</span>
+                        The scheduler controls execution.
+                    </div>
+
+                    <div>
+                        <span>03</span>
+                        Large workloads can be automated.
                     </div>
 
                     <div>
                         <span>04</span>
-                        <section>
-                            <h3>CPU</h3>
-                            <p>Executes instructions of the selected job.</p>
-                        </section>
-                    </div>
-
-                    <div>
-                        <span>05</span>
-                        <section>
-                            <h3>Input / Output System</h3>
-                            <p>Handles data input and output operations.</p>
-                        </section>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-
-        <!-- Slide 6 -->
-        <section class="slide">
-            <div class="content">
-                <span class="slide-number">05</span>
-
-                <h2>Jobs Suitable for Batch Processing</h2>
-
-                <div class="application-grid">
-
-                    <div>💰 Payroll Processing</div>
-                    <div>🏦 Bank Transaction Processing</div>
-                    <div>💡 Utility Bill Generation</div>
-                    <div>🎓 Examination Results</div>
-                    <div>💾 Data Backups</div>
-                    <div>📊 Large-Scale Data Analysis</div>
-                    <div>📄 Report Generation</div>
-                    <div>📦 Inventory Updates</div>
-
-                </div>
-            </div>
-        </section>
-
-
-        <!-- Slide 7 -->
-        <section class="slide">
-            <div class="content">
-                <span class="slide-number">06</span>
-
-                <h2>Advantages</h2>
-
-                <div class="advantages">
-
-                    <div>
-                        <span>✓</span>
-                        <p><strong>Efficient resource utilization</strong><br>
-                        Makes effective use of computer resources.</p>
-                    </div>
-
-                    <div>
-                        <span>✓</span>
-                        <p><strong>Large number of jobs</strong><br>
-                        Processes many jobs automatically.</p>
-                    </div>
-
-                    <div>
-                        <span>✓</span>
-                        <p><strong>Less user interaction</strong><br>
-                        Reduces repetitive manual work.</p>
-                    </div>
-
-                    <div>
-                        <span>✓</span>
-                        <p><strong>Scheduled processing</strong><br>
-                        Tasks can run at planned times.</p>
-                    </div>
-
-                    <div>
-                        <span>✓</span>
-                        <p><strong>Good for repetitive work</strong><br>
-                        Ideal for predictable workloads.</p>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-
-        <!-- Slide 8 -->
-        <section class="slide">
-            <div class="content">
-                <span class="slide-number">07</span>
-
-                <h2>Disadvantages</h2>
-
-                <div class="disadvantages">
-
-                    <div>
-                        <span>!</span>
-                        <p><strong>No immediate response</strong><br>
-                        Results may take time.</p>
-                    </div>
-
-                    <div>
-                        <span>!</span>
-                        <p><strong>Long waiting time</strong><br>
-                        Users may need to wait for the batch to finish.</p>
-                    </div>
-
-                    <div>
-                        <span>!</span>
-                        <p><strong>Debugging difficulties</strong><br>
-                        Errors may only be noticed after processing.</p>
-                    </div>
-
-                    <div>
-                        <span>!</span>
-                        <p><strong>Limited interaction</strong><br>
-                        Users cannot easily interact with running jobs.</p>
-                    </div>
-
-                    <div>
-                        <span>!</span>
-                        <p><strong>Not suitable for real-time applications</strong><br>
-                        Immediate responses are not its main purpose.</p>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-
-        <!-- Slide 9 -->
-        <section class="slide">
-            <div class="content">
-                <span class="slide-number">08</span>
-
-                <h2>Examples & Applications</h2>
-
-                <div class="two-column">
-
-                    <div>
-                        <h3>Historical Examples</h3>
-
-                        <ul>
-                            <li>IBM mainframe systems</li>
-                            <li>Early large-scale computer systems</li>
-                            <li>Mainframe-based business processing</li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <h3>Modern Applications</h3>
-
-                        <ul>
-                            <li>Payroll systems</li>
-                            <li>Banking transaction processing</li>
-                            <li>Billing systems</li>
-                            <li>Data backup</li>
-                            <li>Large database processing</li>
-                            <li>Automated report generation</li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-
-        <!-- Slide 10 -->
-        <section class="slide">
-            <div class="content">
-                <span class="slide-number">09</span>
-
-                <h2>Batch OS vs Interactive OS</h2>
-
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Feature</th>
-                            <th>Batch OS</th>
-                            <th>Interactive OS</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        <tr>
-                            <td>User interaction</td>
-                            <td>Very low</td>
-                            <td>High</td>
-                        </tr>
-
-                        <tr>
-                            <td>Processing</td>
-                            <td>Groups of jobs</td>
-                            <td>Individual tasks</td>
-                        </tr>
-
-                        <tr>
-                            <td>Response</td>
-                            <td>Delayed</td>
-                            <td>Usually immediate</td>
-                        </tr>
-
-                        <tr>
-                            <td>Main purpose</td>
-                            <td>Large repetitive tasks</td>
-                            <td>Interactive applications</td>
-                        </tr>
-
-                        <tr>
-                            <td>Suitable for</td>
-                            <td>Scheduled jobs</td>
-                            <td>User-driven tasks</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-            </div>
-        </section>
-
-
-        <!-- Slide 11 -->
-        <section class="slide">
-            <div class="content">
-                <span class="slide-number">10</span>
-
-                <h2>Conclusion</h2>
-
-                <div class="conclusion">
-
-                    <div>
-                        <strong>01</strong>
-                        <p>Batch OS processes groups of jobs automatically.</p>
-                    </div>
-
-                    <div>
-                        <strong>02</strong>
-                        <p>Jobs are collected, queued, scheduled and executed.</p>
-                    </div>
-
-                    <div>
-                        <strong>03</strong>
-                        <p>It reduces manual intervention.</p>
-                    </div>
-
-                    <div>
-                        <strong>04</strong>
-                        <p>It is efficient for repetitive and large-scale tasks.</p>
-                    </div>
-
-                    <div>
-                        <strong>05</strong>
-                        <p>Its main limitation is delayed user response.</p>
-                    </div>
-
-                    <div>
-                        <strong>06</strong>
-                        <p>Batch processing remains important in modern computing.</p>
+                        Batch processing remains useful today.
                     </div>
 
                 </div>
 
-                <h3 class="thank-you">Thank You!</h3>
 
-            </div>
-        </section>
+                <div class="thank-you">
 
+                    THANK YOU
 
-        <!-- Slide 12 -->
-        <section class="slide">
-            <div class="content">
-                <span class="slide-number">11</span>
-
-                <h2>References</h2>
-
-                <div class="references">
-
-                    <p>
-                        1. Silberschatz, A., Galvin, P. B., & Gagne, G.
-                        <em>Operating System Concepts</em>, 10th Edition.
-                        Wiley.
-                    </p>
-
-                    <p>
-                        2. Stallings, W.
-                        <em>Operating Systems: Internals and Design Principles</em>,
-                        9th Edition. Pearson.
-                    </p>
-
-                    <p>
-                        3. Tanenbaum, A. S., & Bos, H.
-                        <em>Modern Operating Systems</em>, 4th Edition.
-                        Pearson.
-                    </p>
-
-                    <p>
-                        4. IBM – Batch processing concepts and mainframe computing.
-                    </p>
+                    <span>
+                        QUESTIONS?
+                    </span>
 
                 </div>
 
             </div>
+
+
+            <footer class="slide-footer">
+
+                <span>GROUP 37</span>
+                <span>CCS2303</span>
+                <span>12 / 12</span>
+
+            </footer>
+
         </section>
 
-    </div>
+
+    </main>
 
 
-    <!-- Navigation -->
-    <div class="navigation">
 
-        <button id="prev">←</button>
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
 
-        <span id="counter">1 / 12</span>
+    <nav
+        class="navigation"
+        aria-label="Presentation navigation"
+    >
 
-        <button id="next">→</button>
+        <button
+            id="prev"
+            aria-label="Previous slide"
+        >
+            ←
+        </button>
 
-        <button id="fullscreen">⛶</button>
 
-    </div>
+        <div class="nav-center">
 
+            <span id="current-slide">
+                01
+            </span>
+
+            <div class="nav-progress">
+
+                <div
+                    id="progress-bar"
+                ></div>
+
+            </div>
+
+            <span id="total-slides">
+                12
+            </span>
+
+        </div>
+
+
+        <button
+            id="next"
+            aria-label="Next slide"
+        >
+            →
+        </button>
+
+
+        <button
+            id="fullscreen"
+            aria-label="Fullscreen"
+        >
+            ⛶
+        </button>
+
+    </nav>
+
+
+
+    <!-- JavaScript -->
 
     <script src="script.js"></script>
 
