@@ -2887,4 +2887,36 @@ body::after {
 
     }
 
+   /* =========================
+   PDF DOWNLOAD BUTTON
+========================= */
+
+#downloadPDF {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    font-weight: 600;
+
+    padding: 10px 14px;
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    background: rgba(255, 255, 255, 0.05);
+
+    color: inherit;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+#downloadPDF:hover {
+    background: rgba(255, 255, 255, 0.12);
+    transform: translateY(-2px);
+}
+
+#downloadPDF:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+
 }
